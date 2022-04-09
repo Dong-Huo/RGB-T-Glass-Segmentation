@@ -17,7 +17,7 @@ This paper proposes a new glass segmentation method utilizing paired RGB and the
 
 ## Datasets
 
-The datasets for training can be downloaded via the links below:
+The datasets utilized in our paper can be downloaded via the links below:
 - [Our RGB-T dataset](https://drive.google.com/file/d/1ysG04qGmnZv7UaybZUuyybaJYJLUkNHX/view?usp=sharing)
 - [GDD](https://mhaiyang.github.io/CVPR2020_GDNet/index)
 
