@@ -29,14 +29,14 @@ The datasets for training can be downloaded via the links below:
 
 ## Training
 
-```python main.py```
+RGB-T: ```python main.py```
+RGB-only: ```python main.py --is_rgbt False```
 
 Modify the arguments in parse_args()
 
 
 ## Testing
 
-``` python main.py --resume checkpoints_path --eval```
-Download the well-trained [models](-) 
-
-Baidu netdisk users can also download the model from [link](-)  with password: -
+RGB-T: ``` python main.py --resume checkpoints_path --eval```
+RGB-only: ```python main.py --is_rgbt False --resume checkpoints_path --eval```
+Download the well-trained models ([RGB-T](https://drive.google.com/file/d/1ftTfKT_zDgTAuMurvgbnpuO2-uzkbgin/view?usp=sharing), [RGB-only](https://drive.google.com/file/d/1iN2JnHB7EW1nlgKeLkmUHA02Pc1P3Uae/view?usp=sharing))
