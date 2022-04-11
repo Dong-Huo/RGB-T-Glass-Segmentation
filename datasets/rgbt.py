@@ -55,9 +55,6 @@ class RGBT:
         temperature = np.load(temperature_path)
         temperature = (temperature - np.min(temperature)) / (np.max(temperature) - np.min(temperature)) * 255
 
-        temperature = cv2.flip(temperature, 0)
-        img = Image.fromarray(cv2.flip(np.array(img), 0)).convert('RGB')
-
         temperature = Image.fromarray(temperature).convert('RGB')
 
         w, h = img.size
