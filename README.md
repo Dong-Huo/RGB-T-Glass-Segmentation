@@ -39,18 +39,18 @@ The datasets utilized in our paper can be downloaded via the links below:
 
 ## Training
 
-RGB-T: ```python main.py```
+RGB-T: ```python main.py --rgbt_path your_data_path```
 
-RGB-only: ```python main.py --is_rgbt False```
+RGB-only: ```python main.py --rgbt_path your_data_path --is_rgbt False```
 
 Modify the arguments in parse_args()
 
 
 ## Testing
 
-RGB-T: ``` python main.py --resume checkpoints_path --eval```
+RGB-T: ``` python main.py --rgbt_path your_data_path --resume your_checkpoints_path --eval```
 
-RGB-only: ```python main.py --is_rgbt False --resume checkpoints_path --eval```
+RGB-only: ```python main.py --rgbt_path your_data_path --is_rgbt False --resume your_checkpoints_path --eval```
 
 Download the well-trained models ([RGB-T](https://drive.google.com/file/d/1ftTfKT_zDgTAuMurvgbnpuO2-uzkbgin/view?usp=sharing), [RGB-only](https://drive.google.com/file/d/1iN2JnHB7EW1nlgKeLkmUHA02Pc1P3Uae/view?usp=sharing))
 
