@@ -10,6 +10,8 @@ This paper proposes a new glass segmentation method utilizing paired RGB and the
 
 ## Architecture
 
+Our architecture follows the standard encoder-decoder framework with skip-connections, which consists of two encoding branches, one decoding branch and a multi-modal fusion module (MFM) as the bridge.
+
 <p align="center">
   <img width="1000" src="./images/architecture.png">
 </p>
