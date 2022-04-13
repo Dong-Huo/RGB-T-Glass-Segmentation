@@ -14,6 +14,12 @@ This paper proposes a new glass segmentation method utilizing paired RGB and the
   <img width="1000" src="./images/architecture.png">
 </p>
 
+## Motivation
+
+<p align="center">
+  <img width="1000" src="./images/motivation.png">
+</p>
+
 
 ## Datasets
 
