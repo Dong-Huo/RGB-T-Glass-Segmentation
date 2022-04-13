@@ -87,7 +87,7 @@ def get_args_parser():
 
     # dataset parameters
     parser.add_argument('--dataset_file', default='rgbt')
-    parser.add_argument('--rgbt_path', default='/home/dong/exp_data/rgbt_glass_detection_dataset', type=str)
+    parser.add_argument('--rgbt_path', default='', type=str)
     parser.add_argument('--remove_difficult', action='store_true')
 
     parser.add_argument('--output_dir', default='checkpoints/',
