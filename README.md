@@ -44,6 +44,11 @@ RGB-only: ```python main.py --is_rgbt False --resume checkpoints_path --eval```
 
 Download the well-trained models ([RGB-T](https://drive.google.com/file/d/1ftTfKT_zDgTAuMurvgbnpuO2-uzkbgin/view?usp=sharing), [RGB-only](https://drive.google.com/file/d/1iN2JnHB7EW1nlgKeLkmUHA02Pc1P3Uae/view?usp=sharing))
 
+
+## Citation
+
+If you use this code and data for your research, please cite our paper.
+
 ```
 @misc{huo2022glass,
       title={Glass Segmentation with RGB-Thermal Image Pairs}, 
