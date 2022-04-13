@@ -1,6 +1,6 @@
 # RGB-T-Glass-Segmentation
 
-Code for this paper [Glass Segmentation with RGB-Thermal Image Pairs](https://arxiv.org)
+Code for this paper [Glass Segmentation with RGB-Thermal Image Pairs](https://arxiv.org/abs/2204.05453)
 
 Dong Huo, Jian Wang, Yiming Qian, Yee-Hong Yang
 
