@@ -2,19 +2,11 @@
 
 Code for this paper [Glass Segmentation with RGB-Thermal Image Pairs](https://arxiv.org/abs/2204.05453)
 
-Dong Huo, Jian Wang, Yiming Qian, Yee-Hong Yang
+Dong Huo, [Jian Wang](https://jianwang-cmu.github.io/), [Yiming Qian](https://yi-ming-qian.github.io/), [Yee-Hong Yang](http://webdocs.cs.ualberta.ca/~yang/)
 
 ## Overview
 
 This paper proposes a new glass segmentation method utilizing paired RGB and thermal images. Due to the large difference between the transmission property of visible light and that of the thermal energy through the glass where most glass is transparent to the visible light but opaque to thermal energy, glass regions of a scene are made more distinguishable with a pair of RGB and thermal images than solely with an RGB image. To exploit such a unique property, we propose a neural network architecture that effectively combines an RGB-thermal image pair with a new multi-modal fusion module based on attention. As well, we have collected a new dataset containing 5551 RGB-thermal image pairs with ground-truth segmentation annotations. The qualitative and quantitative evaluations demonstrate the effectiveness of the proposed approach on fusing RGB and thermal data for glass segmentation.
-
-## Architecture
-
-Our architecture follows the standard encoder-decoder framework with skip-connections, which consists of two encoding branches, one decoding branch and a multi-modal fusion module (MFM) as the bridge.
-
-<p align="center">
-  <img width="800" src="./images/architecture.png">
-</p>
 
 ## Motivation
 
@@ -24,6 +16,13 @@ Most glass is transparent to the visible light but opaque to thermal energy, gla
   <img width="400" src="./images/motivation.png">
 </p>
 
+## Architecture
+
+Our architecture follows the standard encoder-decoder framework with skip-connections, which consists of two encoding branches, one decoding branch and a multi-modal fusion module (MFM) as the bridge.
+
+<p align="center">
+  <img width="800" src="./images/architecture.png">
+</p>
 
 ## Datasets
 
