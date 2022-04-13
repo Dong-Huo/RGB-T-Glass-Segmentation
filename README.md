@@ -18,8 +18,10 @@ Our architecture follows the standard encoder-decoder framework with skip-connec
 
 ## Motivation
 
+Most glass is transparent to the visible light but opaque to thermal energy, glass regions of a scene are made more distinguishable with a pair of RGB and thermal images than solely with an RGB image.
+
 <p align="center">
-  <img width="500" src="./images/motivation.png">
+  <img width="400" src="./images/motivation.png">
 </p>
 
 
