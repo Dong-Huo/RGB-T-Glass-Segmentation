@@ -59,13 +59,11 @@ Download the well-trained models ([RGB-T](https://drive.google.com/file/d/1ftTfK
 If you use this code and data for your research, please cite our paper.
 
 ```
-@misc{huo2022glass,
-      title={Glass Segmentation with RGB-Thermal Image Pairs}, 
-      author={Dong Huo and Jian Wang and Yiming Qian and Yee-Hong Yang},
-      year={2022},
-      eprint={2204.05453},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{huo2022glass,
+  title={Glass Segmentation with RGB-Thermal Image Pairs},
+  author={Huo, Dong and Wang, Jian and Qian, Yiming and Yang, Yee-Hong},
+  journal={arXiv preprint arXiv:2204.05453},
+  year={2022}
 }
 ```
 
