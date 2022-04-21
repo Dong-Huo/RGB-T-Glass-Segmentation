@@ -2,7 +2,7 @@
 
 Code for this paper [Glass Segmentation with RGB-Thermal Image Pairs](https://arxiv.org/abs/2204.05453)
 
-[Dong Huo](https://scholar.google.com/citations?user=adUfxKkAAAAJ&hl=en), [Jian Wang](https://jianwang-cmu.github.io/), [Yiming Qian](https://yi-ming-qian.github.io/), [Yee-Hong Yang](http://webdocs.cs.ualberta.ca/~yang/)
+[Dong Huo](https://dong-huo.github.io/), [Jian Wang](https://jianwang-cmu.github.io/), [Yiming Qian](https://yi-ming-qian.github.io/), [Yee-Hong Yang](http://webdocs.cs.ualberta.ca/~yang/)
 
 ## Overview
 
