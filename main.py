@@ -105,6 +105,9 @@ def get_args_parser():
 
     parser.add_argument('--resume', help='resume from checkpoint')
     parser.add_argument('--eval', action='store_true')
+    
+    parser.add_argument('--is_rgbt', default='True', action='store_true',
+                        help="True for rgbt and False for rgb-only")
 
     parser.add_argument('--start_epoch', default=0, type=int, metavar='N',
                         help='start epoch')
@@ -189,8 +192,10 @@ def main(args):
             args.start_epoch = checkpoint['epoch'] + 1
 
     if args.eval:
-        mean_rgbt_iou = evaluate(model, criterion, postprocessors, data_loader_val, device, args.output_dir)
-        print("mean_iou: " + str(mean_rgbt_iou))
+        mean_rgbt_iou, mean_rgbt_mae, mean_rgbt_no_glass_iou, mean_rgbt_no_glass_mae = evaluate(model, criterion,
+                                                                                                postprocessors,
+                                                                                                data_loader_val, device,
+                                                                                                args.output_dir, args.is_rgbt)
         return
 
     print("Start training")
@@ -201,13 +206,13 @@ def main(args):
         if args.distributed:
             sampler_train.set_epoch(epoch)
         train_one_epoch(model, criterion, data_loader_train, optimizer, device, epoch, writer, args.batch_size,
-                        args.clip_max_norm)
+                        args.clip_max_norm, args.is_rgbt)
         lr_scheduler.step()
 
         mean_rgbt_iou, mean_rgbt_mae, mean_rgbt_no_glass_iou, mean_rgbt_no_glass_mae = evaluate(model, criterion,
                                                                                                 postprocessors,
                                                                                                 data_loader_val, device,
-                                                                                                args.output_dir)
+                                                                                                args.output_dir, args.is_rgbt)
         writer.add_scalar('testing/rgbt_iou', mean_rgbt_iou, epoch)
         writer.add_scalar('testing/rgbt_mae', mean_rgbt_mae, epoch)
         writer.add_scalar('testing/rgbt_no_glass_iou', mean_rgbt_no_glass_iou, epoch)
