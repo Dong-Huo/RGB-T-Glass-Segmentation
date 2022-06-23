@@ -16,7 +16,7 @@ import util.misc as utils
 
 def train_one_epoch(model: torch.nn.Module, criterion: torch.nn.Module,
                     data_loader: Iterable, optimizer: torch.optim.Optimizer,
-                    device: torch.device, epoch: int, writer, batch_size, max_norm: float = 0):
+                    device: torch.device, epoch: int, writer, batch_size, max_norm: float = 0, is_rgbt=True):
     model.train()
     criterion.train()
     metric_logger = utils.MetricLogger(delimiter="  ")
@@ -40,7 +40,7 @@ def train_one_epoch(model: torch.nn.Module, criterion: torch.nn.Module,
         final_size = (max_h, max_w)
 
         # change True to False for RGB only
-        outputs = model(rgb, temperature, final_size, True)
+        outputs = model(rgb, temperature, final_size, is_rgbt)
         loss_dict = criterion(outputs, targets)
         loss = sum([loss_dict[k] for k in loss_dict.keys()])
 
@@ -74,7 +74,7 @@ def iou(pred, target):
 
 
 @torch.no_grad()
-def evaluate(model, criterion, postprocessors, data_loader, device, output_dir):
+def evaluate(model, criterion, postprocessors, data_loader, device, output_dir, is_rgbt=True):
     model.eval()
     criterion.eval()
 
@@ -96,7 +96,7 @@ def evaluate(model, criterion, postprocessors, data_loader, device, output_dir):
         final_size = (max_h, max_w)
 
         # change True to False for RGB only
-        outputs = model(rgb, temperature, final_size, True)
+        outputs = model(rgb, temperature, final_size, is_rgbt)
 
         orig_target_sizes = torch.stack([t["orig_size"] for t in targets], dim=0)
         orig_masks = [t["orig_masks"] for t in targets]
@@ -139,7 +139,7 @@ def evaluate(model, criterion, postprocessors, data_loader, device, output_dir):
         final_size = (max_h, max_w)
 
         # change True to False for RGB only
-        outputs = model(rgb, temperature, final_size, True)
+        outputs = model(rgb, temperature, final_size, is_rgbt)
 
         orig_target_sizes = torch.stack([t["orig_size"] for t in targets], dim=0)
         orig_masks = [t["orig_masks"] for t in targets]
