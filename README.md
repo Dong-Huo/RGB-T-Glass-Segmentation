@@ -28,7 +28,7 @@ Our architecture follows the standard encoder-decoder framework with skip-connec
 
 The datasets utilized in our paper can be downloaded via the links below:
 - [Our RGB-T dataset](https://drive.google.com/file/d/1ysG04qGmnZv7UaybZUuyybaJYJLUkNHX/view?usp=sharing)
-- [GDD](https://mhaiyang.github.io/CVPR2020_GDNet/index)
+- [GDD](https://dong-huo.github.io/)
 
 ## Prerequisites
 - Python 3.8 
