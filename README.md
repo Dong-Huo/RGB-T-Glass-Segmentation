@@ -63,9 +63,10 @@ If you use this code and data for your research, please cite our paper.
   title={Glass segmentation with RGB-thermal image pairs},
   author={Huo, Dong and Wang, Jian and Qian, Yiming and Yang, Yee-Hong},
   journal={IEEE Transactions on Image Processing},
+  volume={32},
+  pages={1911--1926},
   year={2023},
   publisher={IEEE}
-  doi={10.1109/TIP.2023.3256762}
 }
 ```
 
