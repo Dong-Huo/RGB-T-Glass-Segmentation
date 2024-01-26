@@ -53,6 +53,9 @@ RGB-only: ```python main.py --rgbt_path your_data_path --is_rgbt False --resume 
 
 Download the well-trained models ([RGB-T](https://drive.google.com/file/d/1ftTfKT_zDgTAuMurvgbnpuO2-uzkbgin/view?usp=sharing), [RGB-only](https://drive.google.com/file/d/1iN2JnHB7EW1nlgKeLkmUHA02Pc1P3Uae/view?usp=sharing))
 
+## Compared results
+Download the compared results from the link [RGB-T](https://drive.google.com/file/d/1ghC37J4fTv7STR4baBpgwcaIVwsKYNDr/view)
+
 
 ## Citation
 
