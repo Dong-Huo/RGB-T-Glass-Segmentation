@@ -51,10 +51,10 @@ RGB-T: ``` python main.py --rgbt_path your_data_path --resume your_checkpoints_p
 
 RGB-only: ```python main.py --rgbt_path your_data_path --is_rgbt False --resume your_checkpoints_path --eval```
 
-Download the well-trained models ([RGB-T](https://drive.google.com/file/d/1ftTfKT_zDgTAuMurvgbnpuO2-uzkbgin/view?usp=sharing), [RGB-only](https://drive.google.com/file/d/1iN2JnHB7EW1nlgKeLkmUHA02Pc1P3Uae/view?usp=sharing))
+Download the well-trained models ([RGB-T](https://drive.google.com/file/d/1bhxvsofaCBI1z9hSaFzXOfpCcse32tbE/view), [RGB-only](https://drive.google.com/file/d/1A6Chh42Ab3_yd6mpmTCDI3iFEEjVkusu/view))
 
 ## Compared results
-Download the compared results from the [link](https://drive.google.com/file/d/1ghC37J4fTv7STR4baBpgwcaIVwsKYNDr/view)
+Download the compared results from the [link](https://drive.google.com/file/d/13iACBgrwRkRbAnvliW_qZeMjf03Au7CM/view)
 
 
 ## Citation
